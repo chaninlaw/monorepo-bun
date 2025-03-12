@@ -3,7 +3,7 @@ import { Button } from "@repo/ui/components/button";
 import { cn } from "@repo/ui/lib/utils";
 
 export default async function Home() {
-  const response = await client.index.get();
+  const response = await client.index.get()
 
   return (
     <main className="flex h-dvh items-center justify-center">
@@ -15,7 +15,7 @@ export default async function Home() {
         >
           {response.data}
         </h1>
-        <Button onClick={async () => {}}>Click me</Button>
+        <Button>Click me</Button>
       </div>
     </main>
   );
