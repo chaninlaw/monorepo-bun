@@ -2,6 +2,7 @@ import js from "@eslint/js";
 import eslintConfigPrettier from "eslint-config-prettier";
 import turboPlugin from "eslint-plugin-turbo";
 import tseslint from "typescript-eslint";
+import perfectionist from 'eslint-plugin-perfectionist'
 import onlyWarn from "eslint-plugin-only-warn";
 
 /**
@@ -22,8 +23,19 @@ export const config = [
     },
   },
   {
+    ...perfectionist.configs['recommended-natural'],
+    rules: {
+      ...perfectionist.configs['recommended-natural'].rules,
+      'perfectionist/sort-imports': 'warn',
+    },
+    settings: {
+      ...perfectionist.configs['recommended-natural'].settings,
+      partitionByNewLine: true
+    }
+  },
+  {
     plugins: {
-      onlyWarn,
+      onlyWarn
     },
   },
   {

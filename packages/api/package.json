@@ -1,0 +1,21 @@
+{
+  "name": "@repo/api",
+  "module": "index.ts",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@elysiajs/eden": "^1.2.0",
+    "backend": "*"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.5",
+    "elysia": "^1.2.25",
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*"
+  }
+}
