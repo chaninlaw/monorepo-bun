@@ -1,0 +1,40 @@
+{
+  "name": "@repo/database",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema": {
+      "default": "./src/schema.ts",
+      "types": "./src/schema.ts"
+    },
+    "./model": {
+      "default": "./src/model.ts",
+      "types": "./src/model.ts"
+    }
+  },
+  "scripts": {
+    "db:generate": "drizzle-kit generate --config=drizzle.config.ts",
+    "db:push": "drizzle-kit push --config=drizzle.config.ts",
+    "db:migrate": "drizzle-kit migrate --config=drizzle.config.ts",
+    "db:studio": "drizzle-kit studio --port=10324 --config=drizzle.config.ts"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.40.0",
+    "drizzle-typebox": "^0.3.0"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "drizzle-kit": "^0.30.5",
+    "eslint": "8.56.0",
+    "typescript": "5.3.3"
+  },
+  "override": {
+    "@sinclair/typebox": "0.32.4"
+  }
+}

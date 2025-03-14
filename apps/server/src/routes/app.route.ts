@@ -1,10 +1,9 @@
-import { App } from '@/index.js'
-import os from 'node:os'
+import { Elysia } from 'elysia'
+import os from 'os'
 
-export default (app: App) => {
-  app.get('/', () => ({ status: 'ok' }))
-
-  app.get('/info', () => {
+export const appRoutes = new Elysia({ tags: ['App'] })
+  .get('/', 'Hello, World')
+  .get('/health', () => {
     const cpuUsage = process.cpuUsage()
     const totalMemory = os.totalmem()
     const freeMemory = os.freemem()
@@ -15,6 +14,3 @@ export default (app: App) => {
       totalMemory,
     }
   })
-
-  return app
-}

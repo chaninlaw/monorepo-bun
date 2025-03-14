@@ -1,11 +1,15 @@
 {
   "extends": "@repo/typescript-config/base.json",
   "compilerOptions": {
+    "outDir": "dist",
+    "declaration": true,
+    "module": "ES2022",
+    "moduleResolution": "bundler",
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
     }
   },
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
 }
