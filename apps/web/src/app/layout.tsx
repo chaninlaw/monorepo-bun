@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import "@workspace/ui/globals.css";
-import { Providers } from "@components/providers";
+import { Providers } from "@/components/providers";
 import { Roboto } from "next/font/google";
 
 const fontSans = Roboto({});
