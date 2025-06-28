@@ -3,7 +3,7 @@ import { Button } from "@repo/ui/components/button";
 import { cn } from "@repo/ui/lib/utils";
 
 export default async function Home() {
-  const response = await app.users.index.get();
+  const response = await app.users.get();
 
   return (
     <main className="flex h-dvh items-center justify-center">
