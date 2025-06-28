@@ -1,7 +1,7 @@
 "use client"
 
-import * as TabsPrimitive from "@radix-ui/react-tabs"
 import { cn } from "#lib/utils.js"
+import { Tabs as TabsPrimitive } from "radix-ui"
 import * as React from "react"
 
 function Tabs({

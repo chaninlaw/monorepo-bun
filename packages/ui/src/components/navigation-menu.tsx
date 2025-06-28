@@ -1,9 +1,9 @@
 "use client"
 
-import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu"
 import { cn } from "#lib/utils.js"
 import { cva } from "class-variance-authority"
 import { ChevronDownIcon } from "lucide-react"
+import { NavigationMenu as NavigationMenuPrimitive } from "radix-ui"
 import * as React from "react"
 
 function NavigationMenu({

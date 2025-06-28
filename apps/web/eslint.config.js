@@ -1,10 +1,12 @@
-import { nextJsConfig } from "@repo/eslint-config/next-js";
+import { nextJsConfig } from "@workspace/eslint-config/next-js";
 import drizzle from "eslint-plugin-drizzle";
 
-/** @type {import("eslint").Linter.Config} */
-export default {
+/** @type {import("eslint").Linter.Config[]} */
+export default [
   ...nextJsConfig,
-  plugins: {
-    drizzle
+  {
+    plugins: {
+      drizzle
+    }
   }
-}
+]

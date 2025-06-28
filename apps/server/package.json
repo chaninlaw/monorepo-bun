@@ -27,8 +27,8 @@
     "ioredis": "^5.6.0"
   },
   "devDependencies": {
-    "@repo/eslint-config": "*",
-    "@repo/typescript-config": "*",
+    "@workspace/eslint-config": "workspace:*",
+    "@workspace/typescript-config": "workspace:*",
     "bun-types": "latest",
     "eslint": "^9.22.0",
     "eslint-plugin-drizzle": "^0.2.3"

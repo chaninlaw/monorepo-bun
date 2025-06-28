@@ -1,6 +1,6 @@
-import { db } from '@repo/database'
-import { model } from '@repo/database/model'
-import { table } from '@repo/database/schema'
+import { db } from '@workspace/database'
+import { model } from '@workspace/database/model'
+import { table } from '@workspace/database/schema'
 import { Elysia, t } from 'elysia'
 
 const { user } = model.insert

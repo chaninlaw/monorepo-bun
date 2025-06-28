@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import "@repo/ui/globals.css";
+import "@workspace/ui/globals.css";
 import { Providers } from "@components/providers";
 import { Roboto } from "next/font/google";
 

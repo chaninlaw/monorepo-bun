@@ -1,6 +1,6 @@
-import { app } from "@repo/api";
-import { Button } from "@repo/ui/components/button";
-import { cn } from "@repo/ui/lib/utils";
+import { app } from "@workspace/api";
+import { Button } from "@workspace/ui/components/button";
+import { cn } from "@workspace/ui/lib/utils";
 
 export default async function Home() {
   const response = await app.users.get();

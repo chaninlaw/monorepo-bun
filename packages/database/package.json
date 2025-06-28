@@ -1,5 +1,5 @@
 {
-  "name": "@repo/database",
+  "name": "@workspace/database",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
@@ -24,14 +24,14 @@
     "db:studio": "drizzle-kit studio --port=10324 --config=drizzle.config.ts"
   },
   "dependencies": {
-    "drizzle-orm": "^0.40.0",
+    "drizzle-orm": "0.44.2",
     "drizzle-typebox": "^0.3.0"
   },
   "devDependencies": {
-    "@repo/eslint-config": "*",
-    "@repo/typescript-config": "*",
-    "drizzle-kit": "^0.30.5",
-    "eslint": "8.56.0",
+    "@workspace/eslint-config": "workspace:*",
+    "@workspace/typescript-config": "workspace:*",
+    "drizzle-kit": "0.31.4",
+    "eslint": "9.30.0",
     "typescript": "5.3.3"
   },
   "override": {
